@@ -1,3 +1,11 @@
+<div style='display: flex; justify-content: space-between; color: blue;'>
+    <a href='{% url "catering" %}' style='color: steelblue; text-decoration: none'>catering</a>
+    <a href='{% url "constructions" %}' style='color: steelblue; text-decoration: none'>constructions</a>
+    <a href='{% url "energy" %}' style='color: steelblue; text-decoration: none'>energy</a>
+    <a href='{% url "entertainment" %}' style='color: steelblue; text-decoration: none'>entertainment</a>
+    <a href='{% url "marketing" %}' style='color: steelblue; text-decoration: none'>marketing</a>
+</div>
 {% for branch in branches %}
+
     {{branch.branch_name}}
 {% endfor %}
